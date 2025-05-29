@@ -22,7 +22,6 @@ public class ClienteService {
         return clienteRepository.findById(id).orElse(null);
     }
 
-    // Nuevo método para buscar por email
     public Cliente findByEmail(String email) {
         return clienteRepository.findByEmail(email).stream().findFirst().orElse(null);
     }
