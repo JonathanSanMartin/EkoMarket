@@ -1,6 +1,6 @@
 # EcoMarket SPA - Microservicios
 ## Requisitos
-- Java 17, MySQL 8.
+- Java 21, MySQL 8.
 ## Ejecución
 1. Clonar repo.
 2. Configurar `application.properties`.
