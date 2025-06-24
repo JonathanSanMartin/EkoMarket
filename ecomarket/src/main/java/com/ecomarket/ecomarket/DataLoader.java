@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-@Profile("dev") // Solo se ejecuta si usas el perfil "dev"
+@Profile("dev")
 @Component
 public class DataLoader implements CommandLineRunner {
 
