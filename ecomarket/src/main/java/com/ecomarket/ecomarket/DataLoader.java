@@ -52,7 +52,7 @@ public class DataLoader implements CommandLineRunner {
             cliente.setEmail(faker.internet().emailAddress());
             cliente.setNombreCompleto(faker.name().fullName());
             cliente.setDireccion(faker.address().fullAddress());
-            cliente.setFechaNacimiento(faker.date().birthday());
+            cliente.setFechaNacimiento(faker.date().birthday(18,65));
             cliente.setTelefono(faker.phoneNumber().cellPhone());
             clienteRepository.save(cliente);
         }
