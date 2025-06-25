@@ -83,30 +83,26 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<annotationProcessorPaths>
-						<path>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</path>
-					</annotationProcessorPaths>
-				</configuration>
-			</plugin>
+			<!-- Plugin para compilar con lombok -->
+    		<plugin>
+      			<groupId>org.apache.maven.plugins</groupId>
+      			<artifactId>maven-compiler-plugin</artifactId>
+      			<configuration>
+        		<annotationProcessorPaths>
+          		<path>
+           			<groupId>org.projectlombok</groupId>
+            		<artifactId>lombok</artifactId>
+            		<version>1.18.30</version>
+          		</path>
+        		</annotationProcessorPaths>
+     			</configuration>
+    		</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.4.6</version>
 				<configuration>
         		<mainClass>com.ecomarket.ecomarket.EcomarketApplication</mainClass>
-      			</configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
